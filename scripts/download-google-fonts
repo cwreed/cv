@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Define fonts to download
+FONTS=("lato" "worksans")
+FONT_DIR="fonts"
+
+if [ ! -d "${FONT_DIR}" ]; then
+    mkdir ${FONT_DIR}
+fi
+
+for font in "${FONTS[@]}"
+do
+    SUB_DIR="${FONT_DIR}/${font}"
+    if [ ! -d "${SUB_DIR}" ]; then
+        mkdir ${SUB_DIR}
+    fi
+    
+    font_urls=$(curl -L "https://api.github.com/repos/google/fonts/contents/ofl/${font}" | jq -r '.[].download_url')
+    for url in ${font_urls[@]}
+    do
+        curl -L -o "${SUB_DIR}/$(basename ${url})" ${url}
+    done
+done

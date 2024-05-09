@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FONT_DIR="fonts"
+
+if [ ! -d "${FONT_DIR}" ]; then
+    mkdir ${FONT_DIR}
+fi
+
+font_urls=$(curl -L "https://api.github.com/repos/FortAwesome/Font-Awesome/contents/otfs" | jq -r '.[].download_url')
+for url in ${font_urls[@]}
+do
+    local_file="${FONT_DIR}/$(basename ${url})"
+    curl -L -o ${local_file} ${url}
+    mv ${local_file} "${local_file//%20/ }"
+done
