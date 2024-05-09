@@ -1,0 +1,45 @@
+name: main
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Cache fonts
+      uses: actions/cache@v3
+      with:
+        path: ~/fonts
+        key: ${{ runner.os }}-fonts-${{ hashFiles('**/fonts/*') }}
+        restore-keys: |
+          ${{ runner.os }}-fonts-
+
+    - name: Download fonts
+      run: make download-fonts
+    
+    - name: Build docker image
+      run: make build
+
+    - name: Lint
+      run: make lint
+
+    - name: Compile resume
+      run: |
+        make compile-resume
+        git config --global user.email "action@github.com"
+        git config --global user.name "github-actions"
+        git add outputs/connor-reed-resume.pdf
+        git commit -m "github-actions: compile resume"
+      
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+        force_with_lease: true
