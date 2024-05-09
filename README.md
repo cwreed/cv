@@ -9,3 +9,7 @@ make build                  # build Docker image for typst
 make fmt                    # format .typ files
 make compile-resume         # compile resume into PDF
 ```
+
+## System requirements
+* `docker`
+* `make`
