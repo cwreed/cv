@@ -32,8 +32,8 @@ jobs:
         context: .
         tags: typst-dev:latest
         push: true
-        cache-from: type=registry,ref=typst-dev:latest
-        cache-to: type=inline
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
 
     - name: Lint
       run: make lint
