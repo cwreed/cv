@@ -1,5 +1,5 @@
 IMAGE_NAME := typst-dev
-DATE := $(shell date +'%Y-%m')
+RESUME_OUT_FILE := connor-reed-resume.pdf
 
 
 default: help
@@ -26,6 +26,11 @@ fmt: # Format all typ files in the project
 	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstfmt $(shell find . -name '*.typ')"
 
 
+.PHONY: lint
+lint: # Lint all typ files in the project
+	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstfmt --check $(shell find . -name '*.typ')"
+
+
 .PHONY: compile-resume
 compile-resume: # Compile the resume.typ file to a PDF
-	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typst compile src/resume.typ outputs/connor-reed-resume.pdf --font-path fonts/"
+	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typst compile src/resume.typ outputs/$(RESUME_OUT_FILE) --font-path fonts/"

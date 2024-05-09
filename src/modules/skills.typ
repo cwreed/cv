@@ -2,20 +2,14 @@
 
 #cvSection("Skills")
 
-#cvSkill(
-  type: [Programming],
-  info: [Python, R, SQL, Bash],
-)
+#cvSkill(type: [Programming], info: [Python, R, SQL, Bash])
 
 #cvSkill(
   type: [ML Tools],
-  info: [PyTorch( Lightning), scikit-learn, experiment tracking (e.g., Hydra, Guild AI), TensorRT]
+  info: [PyTorch( Lightning), scikit-learn, experiment tracking (e.g., Hydra, Guild AI), TensorRT],
 )
 
-#cvSkill(
-  type: [DevOps],
-  info: [Git, Docker, Terraform, dbt, AWS]
-)
+#cvSkill(type: [DevOps], info: [Git, Docker, Terraform, dbt, AWS])
 
 #cvSkill(
   type: [Statistics],
