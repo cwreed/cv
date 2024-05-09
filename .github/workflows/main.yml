@@ -37,7 +37,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
-        tags: ghcr.io/typst-dev
+        tags: ghcr.io/cwreed/cv/typst-dev
         push: true
         cache-from: type=gha
         cache-to: type=gha,mode=max
