@@ -1,4 +1,6 @@
 #!/bin/bash
+set -eu
+set -o pipefail
 
 # Define fonts to download
 FONTS=("lato" "worksans")

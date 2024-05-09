@@ -13,3 +13,4 @@ make compile-resume         # compile resume into PDF
 ## System requirements
 * `docker`
 * `make`
+* `jq`
