@@ -39,6 +39,7 @@ jobs:
         context: .
         tags: ghcr.io/cwreed/cv/typst-dev
         push: true
+        load: true
         cache-from: type=gha
         cache-to: type=gha,mode=max
 
