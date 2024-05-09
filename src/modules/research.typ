@@ -25,6 +25,6 @@
       ecological function, formation, and rapid measurement of soil organic carbon],
     [Conducted meta-analysis of long-term experiments to quantify the mediating
       effect of soil organic carbon on the relationship between conservation
-      agriculture and crop yield stability],
+      agriculture practices and crop yield stability],
   ),
 )

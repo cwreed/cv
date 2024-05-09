@@ -3,7 +3,7 @@ set -eu
 set -o pipefail
 
 # Define fonts to download
-FONTS=("lato" "worksans")
+FONTS=("lato")
 FONT_DIR="fonts"
 
 if [ ! -d "${FONT_DIR}" ]; then

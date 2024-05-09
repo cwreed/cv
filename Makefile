@@ -28,4 +28,4 @@ fmt: # Format all typ files in the project
 
 .PHONY: compile-resume
 compile-resume: # Compile the resume.typ file to a PDF
-	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typst compile src/resume.typ outputs/connor-reed-resume-$(DATE).pdf --font-path fonts/"
+	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typst compile src/resume.typ outputs/connor-reed-resume.pdf --font-path fonts/"

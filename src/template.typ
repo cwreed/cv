@@ -214,11 +214,13 @@
 }
 
 #let cvFooter() = {
+  let today = datetime.today()
   place(bottom, table(
     columns: (1fr, auto),
     inset: 0pt,
     stroke: none,
     footerStyle([#firstName #lastName]),
+    footerStyle([Compiled #today.display()]),
   ))
 }
 
