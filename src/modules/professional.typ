@@ -21,6 +21,7 @@
       reproducibility],
     [Conduct experiments to estimate effects of research proposals on company
       objectives],
+    [Wrote report for investors on the company's plans to advance sustainable aquaculture, establishing internal ESG objectives],
   ),
 )
 
