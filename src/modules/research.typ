@@ -9,7 +9,7 @@
   location: [New York, NY],
   description: list(
     [Developed deep learning pipeline to detect floods on smallholder croplands in
-      sub-Saharan Africa using Sentinel-1 and Sentinel-2 satellite imagery],
+      sub-Saharan Africa using Sentinel-1 and Sentinel-2 satellite image time series],
     [Conducted geospatial time series analysis to assess the impact of floods on crop
       yields and food security in sub-Saharan Africa],
   ),
