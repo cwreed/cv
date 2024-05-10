@@ -197,7 +197,7 @@
 }
 
 #let cvPublication(bibPath: "", keyList: list(), refStyle: "apa", refFull: true) = {
-  show bibliography: it => publicationStyle(it)
+  show bibliography: it => publicationStyle(it, firstName, lastName)
   bibliography(bibPath, title: none, style: refStyle, full: refFull)
 }
 
