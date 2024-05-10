@@ -109,10 +109,12 @@
 
 #let publicationStyle(str, firstName, lastName) = {
   // Bold any instances of my name in the bibliography
-  let nameVersion1 = firstName + " " + lastName
-  let nameVersion2 = lastName + ", " + firstName.first() + "."
-  show nameVersion1: nameVersion1 => text(weight: "bold", nameVersion1)
-  show nameVersion2: nameVersion2 => text(weight: "bold", nameVersion2)
+  let nameVersions = (
+    firstName + " " + lastName,
+    lastName + ", " + firstName.first() + ".",
+    firstName.first() + ". " + lastName,
+  )
+  show regex("(" + nameVersions.join("|") + ")"): it => text(weight: "bold", it)
 
   text(str)
 }
