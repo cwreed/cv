@@ -85,14 +85,6 @@
     [#headerInfoStyle(makeHeaderInfo(), accentColor)],
   )
 
-  let makeHeaderPhotoSection() = {
-    if profilePhoto != "" {
-      image(profilePhoto, height: 3.6cm)
-    } else {
-      v(3.6cm)
-    }
-  }
-
   let makeHeader(leftComp, rightComp, columns, align) = table(
     columns: columns,
     inset: 0pt,
@@ -103,11 +95,7 @@
     { rightComp },
   )
 
-  if hasPhoto {
-    makeHeader(makeHeaderNameSection(), makeHeaderPhotoSection(), (auto, 20%), align)
-  } else {
-    makeHeader(makeHeaderNameSection(), makeHeaderPhotoSection(), (auto, 0%), align)
-  }
+  makeHeader(makeHeaderNameSection(), v(3.0cm), (auto, 0%), align)
 }
 
 #let cvSection(title, highlighted: true, letters: 3) = {

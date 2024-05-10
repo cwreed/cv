@@ -12,11 +12,10 @@
       sea lice on salmon with quantified uncertainty, yielding a 75% reduction in
       annotation COGS while enabling more effective treatment and regulation],
     [Developed, optimized, and deployed model to detect body wounds on salmon],
-    [Built internal services to orchestrate serving images to models, yielding hundreds of thousands of inferences per day],
-    [Built internal service to automatically curate important data samples for model
-      training and testing],
-    [Built ML dataset registry and software libraries to support model reproducibility and reduce friction to model iteration],
-    [Conduct experiments to estimate effects of research proposals on company
+    [Built system to integrate model servers into production pipeline, scaling inferences from tens to hundreds of thousands per day],
+    [Built internal service to automatically curate important training/evaluation samples from production pipeline for human QA],
+    [Built ML dataset registry and Python library with common computer vision preprocessing and annotation methods to support model reproducibility and reduce friction to model iteration],
+    [Conduct experiments to estimate effects of new models and other research proposals on company
       objectives],
     [Wrote report for investors on the company's plans to advance sustainable aquaculture, establishing internal ESG objectives],
   ),
