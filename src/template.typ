@@ -11,7 +11,7 @@
   }
 }
 
-#let cvHeader(align: left, hasPhoto: true) = {
+#let cvHeader(align: left, hasPhoto: true, quote: str) = {
   let makeHeaderInfo() = {
     let personalInfoIcons = (
       phone: fa-phone(),
@@ -83,6 +83,7 @@
     row-gutter: 6mm,
     [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
     [#headerInfoStyle(makeHeaderInfo(), accentColor)],
+    [#headerQuoteStyle(quote, accentColor)]
   )
 
   let makeHeader(leftComp, rightComp, columns, align) = table(
@@ -95,7 +96,8 @@
     { rightComp },
   )
 
-  makeHeader(makeHeaderNameSection(), v(3.0cm), (auto, 0%), align)
+  show link: set text(fill: accentColor)
+  makeHeader(makeHeaderNameSection(), v(2.75cm), (auto, 0%), align)
 }
 
 #let cvSection(title, highlighted: true, letters: 3) = {
@@ -174,9 +176,10 @@
 
 #let cvHonor(date: "1990", title: "Title", issuer: "", url: "", location: "") = {
   table(
-    columns: (16%, 1fr, 15%),
+    columns: (auto, 1fr),
     inset: 0pt,
     column-gutter: 10pt,
+    row-gutter: 5pt,
     align: horizon,
     stroke: none,
     honorDateStyle(date),
@@ -201,15 +204,19 @@
   bibliography(bibPath, title: none, style: refStyle, full: refFull)
 }
 
-#let cvFooter() = {
-  let today = datetime.today()
-  place(bottom, table(
+#let cvFooter(pageNumbers: bool) = {
+  let today = datetime.today(offset: auto)
+  let left = [#firstName #lastName]
+  if pageNumbers {
+    left = left + [, page #counter(page).display("1/1", both: true)]
+  }
+  table(
     columns: (1fr, auto),
     inset: 0pt,
     stroke: none,
-    footerStyle([#firstName #lastName]),
+    footerStyle(left),
     footerStyle([Compiled #today.display()]),
-  ))
+  )
 }
 
 #let letterHeader(
@@ -253,7 +260,8 @@
   set align(left)
   set page(
     paper: "a4",
-    margin: (left: 1.4cm, right: 1.4cm, top: .8cm, bottom: .4cm),
+    margin: (left: 1.4cm, right: 1.4cm, top: .8cm, bottom: .8cm),
   )
+  show link: set text(fill: colors.sky)
   doc
 }

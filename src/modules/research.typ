@@ -1,8 +1,6 @@
-#import "../template.typ": cvSection, cvEntry
+#import "../template.typ": cvEntry
 
-#cvSection("Research Experience")
-
-#cvEntry(
+#let mcdermid-lab-resume = cvEntry(
   title: [Graduate Research Assistant, McDermid Lab],
   institution: [New York University, Department of Environmental Studies],
   date: [July 2020 -- September 2022],
@@ -15,7 +13,7 @@
   ),
 )
 
-#cvEntry(
+#let bradford-lab-resume = cvEntry(
   title: [Research Assistant, The Bradford Lab],
   institution: [Yale School of the Environment],
   date: [January 2016 -- August 2020],

@@ -1,8 +1,6 @@
-#import "../template.typ": cvSection, cvEntry
+#import "../template.typ": cvEntry
 
-#cvSection("Professional Experience")
-
-#cvEntry(
+#let aquabyte-resume = cvEntry(
   title: [Machine Learning Engineer],
   institution: [Aquabyte],
   date: [June 2022 -- present],
@@ -21,7 +19,7 @@
   ),
 )
 
-#cvEntry(
+#let indigo-resume = cvEntry(
   title: [Soil Data Research Intern, Carbon Experimentation],
   institution: [Indigo],
   date: [June -- August 2021],

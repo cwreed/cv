@@ -1,8 +1,6 @@
-#import "../template.typ": cvSection, cvPublication
+#import "../template.typ": cvPublication
 
-#cvSection("Publications")
-
-#cvPublication(
+#let ref = cvPublication(
   bibPath: "publications/publications.bib",
   keyList: ("reed2022"),
   refStyle: "nature",

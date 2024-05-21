@@ -1,4 +1,5 @@
 IMAGE_NAME := typst-dev
+CV_OUT_FILE := connor-reed-cv.pdf
 RESUME_OUT_FILE := connor-reed-resume.pdf
 
 
@@ -31,6 +32,21 @@ lint: # Lint all typ files in the project
 	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstfmt --check $(shell find . -name '*.typ')"
 
 
+.PHONY: compile-cv
+compile-cv: # Compile the cv.typ file to a PDF
+	@ docker run \
+		--rm \
+		-v $(PWD):/app \
+		-v /etc/timezone:/etc/timezone:ro \
+		-v /etc/localtime:/etc/localtime:ro \
+		$(IMAGE_NAME) -c "typst compile src/cv.typ outputs/$(CV_OUT_FILE) --font-path fonts/"
+
+
 .PHONY: compile-resume
 compile-resume: # Compile the resume.typ file to a PDF
-	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typst compile src/resume.typ outputs/$(RESUME_OUT_FILE) --font-path fonts/"
+	@ docker run \
+		--rm \
+		-v $(PWD):/app \
+		-v /etc/timezone:/etc/timezone:ro \
+		-v /etc/localtime:/etc/localtime:ro \
+		$(IMAGE_NAME) -c "typst compile src/resume.typ outputs/$(RESUME_OUT_FILE) --font-path fonts/"

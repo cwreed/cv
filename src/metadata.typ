@@ -7,9 +7,6 @@
   linkedin: "connor-reed",
 )
 
-#let cvFooter = "Curriculum Vitae"
-#let letterFooter = "Cover Letter"
-
 #let choiceColor = "clay"
 #let profilePhoto = ""
 #let varDisplayLogo = false

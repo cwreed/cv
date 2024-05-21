@@ -8,6 +8,18 @@
   include { "modules/" + file + ".typ" }
 }
 
+#let to-string(content) = {
+  if content.has("text") {
+    content.text
+  } else if content.has("children") {
+    content.children.map(to-string).join("")
+  } else if content.has("body") {
+    to-string(content.body)
+  } else if content == [ ] {
+    " "
+  }
+}
+
 #let fontList = ("Lato")
 #let headerFont = ("Lato")
 
@@ -38,7 +50,7 @@
   )
 }
 
-#let headerLastNameStyle(str) = { text(font: headerFont, size: 32pt, weight: "bold", str) }
+#let headerLastNameStyle(str) = { text(font: headerFont, size: 32pt, weight: "regular", str) }
 
 #let headerInfoStyle(str, accentColor) = { text(size: 10pt, fill: accentColor, str) }
 
@@ -46,7 +58,9 @@
 
 #let sectionTitleStyle(str, color: black) = { text(size: 16pt, font: fontList, weight: "bold", fill: color, str) }
 
-#let entryA1Style(str) = { text(size: 10pt, weight: "bold", str) }
+#let entryA1Style(content) = {
+  text(size: 10pt, weight: "bold", content)
+}
 
 #let entryA2Style(str, accentColor) = {
   align(
