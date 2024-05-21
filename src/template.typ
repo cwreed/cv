@@ -83,7 +83,7 @@
     row-gutter: 6mm,
     [#headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(lastName)],
     [#headerInfoStyle(makeHeaderInfo(), accentColor)],
-    [#headerQuoteStyle(quote, accentColor)]
+    [#headerQuoteStyle(quote, accentColor)],
   )
 
   let makeHeader(leftComp, rightComp, columns, align) = table(

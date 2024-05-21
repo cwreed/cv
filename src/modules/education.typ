@@ -1,6 +1,5 @@
 #import "../template.typ": cvEntry, colors
 
-
 #let nyu-cv = cvEntry(
   title: [Master of Science, Data Science],
   institution: [New York University],
