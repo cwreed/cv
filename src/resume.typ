@@ -10,6 +10,7 @@
 
 #cvHeader(hasPhoto: false, align: left, quote: [])
 
+#v(-12pt)
 #cvSection("Professional Experience")
 #aquabyte-resume
 #indigo-resume

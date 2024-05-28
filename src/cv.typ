@@ -12,6 +12,7 @@
 
 #cvHeader(hasPhoto: false, align: left, quote: [])
 
+#v(-12pt)
 #cvSection("Education")
 #nyu-resume
 #yale-resume
