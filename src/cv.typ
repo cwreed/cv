@@ -18,16 +18,16 @@
 #yale-resume
 #sfs-bhutan
 
-#cvSection("Professional Experience")
-#aquabyte-resume
-#indigo-resume
-
 #cvSection("Research Experience")
 #mcdermid-lab-resume
 #bradford-lab-resume
 
 #cvSection("Publications")
 #ref
+
+#cvSection("Professional Experience")
+#aquabyte-resume
+#indigo-resume
 
 #pagebreak()
 #cvSection("Grants & Honors")

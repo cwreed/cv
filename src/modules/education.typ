@@ -26,6 +26,6 @@
   location: [Bumthang District, Bhutan],
   description: list(
     [Completed coursework on Himalayan forest ecology, rural livelihoods, and Bhutanese culture],
-    [Conducted ethnographic field research on agricultural knowledge transfer in the village of Ura],
+    [Conducted ethnographic field research on agricultural knowledge transfer in the village of Ura and presented findings to government stakeholders],
   ),
 )

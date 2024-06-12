@@ -11,10 +11,10 @@
 
 #let statistics-skill = cvSkill(
   type: [Statistics],
-  info: [Machine learning, deep learning, computer vision, time series, geospatial, probabilistic models, Bayesian inference, hypothesis testing, structural causal models, A/B testing, generative models],
+  info: [Machine learning, deep learning, computer vision, time series, geospatial, probabilistic models, Bayesian inference, hypothesis testing, A/B testing, structural causal models, generative models],
 )
 
 #let other-skill = cvSkill(
   type: [Other],
-  info: [Scientific research, food systems, ecology, food security, climate change, music (bass)],
+  info: [Research, writing, public speaking, food systems, ecology, food security, climate change, music (bass)],
 )

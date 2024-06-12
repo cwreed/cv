@@ -31,7 +31,7 @@
 #let robert-berlin = cvHonor(
   date: "2017",
   title: "Robert Berlin Fellowship",
-  issuer: "Berkeley College, Yale University",
+  issuer: "Yale University, Berkeley College",
 )
 
 #let tristan-perlroth = cvHonor(
