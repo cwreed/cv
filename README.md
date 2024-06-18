@@ -7,6 +7,8 @@ This is a small library I use to create my CV and resume(s) with [typst](https:/
 make download-fonts         # download open source fonts used in project
 make build                  # build Docker image for typst
 make fmt                    # format .typ files
+make lint                   # lint .typ files
+make compile-cv             # compile CV into PDF
 make compile-resume         # compile resume into PDF
 ```
 
