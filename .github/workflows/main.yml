@@ -44,10 +44,13 @@ jobs:
     - name: Compile resume
       run: |
         make compile-resume
+        make compile-cv
         git config --global user.email "action@github.com"
         git config --global user.name "github-actions"
         git add outputs/connor-reed-resume.pdf
         git commit -m "github-actions: compile resume"
+        git add outputs/connor-reed-cv.pdf
+        git commit -m "github-actions: compile cv"
       
     - name: Push changes
       uses: ad-m/github-push-action@master
