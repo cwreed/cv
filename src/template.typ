@@ -215,7 +215,7 @@
     inset: 0pt,
     stroke: none,
     footerStyle(left),
-    footerStyle([Compiled #today.display()]),
+    footerStyle([Last updated #today.display()]),
   )
 }
 
