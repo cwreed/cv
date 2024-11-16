@@ -7,8 +7,7 @@
   location: [New York, NY],
   description: list(
     [Developed, optimized, and deployed custom small-object detector model to detect
-      sea lice on salmon with quantified uncertainty, yielding a 75% reduction in
-      annotation COGS while enabling more effective treatment and regulation],
+      sea lice on salmon with human-level accuracy, yielding a 75% reduction in the cost of running the product while enabling more effective treatment and regulation],
     [Developed, optimized, and deployed model to detect body wounds on salmon],
     [Built system to integrate model servers into production pipeline, scaling inferences from tens to hundreds of thousands per day],
     [Built internal service to automatically curate important training/evaluation samples from production pipeline for human review],

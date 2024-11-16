@@ -1,6 +1,6 @@
 #import "../template.typ": cvSkill
 
-#let programming-skill = cvSkill(type: [Programming], info: [Python, R, SQL, Bash])
+#let programming-skill = cvSkill(type: [Programming], info: [Python, R, SQL, Bash, GIS])
 
 #let ml-tools-skill = cvSkill(
   type: [ML Tools],
