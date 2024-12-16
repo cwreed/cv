@@ -1,13 +1,15 @@
 #import "../template.typ": cvSkill
 
-#let programming-skill = cvSkill(type: [Programming], info: [Python, R, SQL, Bash, GIS])
+#let programming-skill = cvSkill(type: [Programming], info: [Python, R, SQL, Bash])
 
 #let ml-tools-skill = cvSkill(
   type: [ML Tools],
-  info: [PyTorch( Lightning), scikit-learn, experiment tracking (e.g., Hydra, Guild AI), TensorRT],
+  info: [PyTorch( Lightning), scikit-learn, experiment tracking (Hydra, Guild AI, W&B), TensorRT],
 )
 
-#let devops-skill = cvSkill(type: [DevOps], info: [Git, Docker, Terraform, dbt, AWS])
+#let databases-skill = cvSkill(type: [Databases], info: [PostgreSQL])
+
+#let devops-skill = cvSkill(type: [DevOps], info: [Git, Docker, Terraform, dbt, Airflow, AWS])
 
 #let statistics-skill = cvSkill(
   type: [Statistics],

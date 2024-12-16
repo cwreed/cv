@@ -37,6 +37,7 @@
 #cvSection("Skills")
 #programming-skill
 #ml-tools-skill
+#databases-skill
 #devops-skill
 #statistics-skill
 #other-skill
