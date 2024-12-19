@@ -1,9 +1,9 @@
 #import "../template.typ": cvEntry
 
 #let aquabyte-resume = cvEntry(
-  title: [Machine Learning Engineer],
+  title: [Senior Machine Learning Engineer \ Machine Learning Engineer],
   institution: [Aquabyte],
-  date: [June 2022 -- present],
+  date: [December 2024 -- present \ June 2022 -- December 2024],
   location: [New York, NY],
   description: list(
     [Developed, optimized, and deployed custom small-object detector model to detect
