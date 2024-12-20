@@ -18,7 +18,7 @@
   date: "2018",
   title: "Yale Summer Environmental Fellowship",
   issuer: "Yale University, Department of Environmental Studies",
-  url: "https://evst.yale.edu/summer-environmental-fellowships-2018",
+  url: "https://evst.yale.edu/previous-summer-environmental-fellowship-awards",
 )
 
 #let yale-gff-1 = cvHonor(
