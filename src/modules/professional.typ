@@ -6,12 +6,10 @@
   date: [December 2024 -- present \ June 2022 -- December 2024],
   location: [New York, NY],
   description: list(
-    [Developed, optimized, and deployed custom small-object detector model to detect
-      sea lice on salmon with human-level accuracy, yielding a 75% reduction in the cost of running the product while enabling more effective treatment and regulation],
-    [Developed, optimized, and deployed model to detect body wounds on salmon],
-    [Built system to integrate model servers into production pipeline, scaling inferences from tens to hundreds of thousands per day],
-    [Built internal service to automatically curate important training/evaluation samples from production pipeline for human review],
-    [Built ML dataset registry and Python library with common computer vision preprocessing and annotation methods to support model reproducibility and fast dataset curation],
+    [Developed custom PyTorch model ensemble (inc. object detection, segmentation, neural fields) to detect
+      sea lice on salmon from underwater imagery with human-level accuracy; optimized for inference speed with TensorRT; deployed as Dockerized application server in AWS],
+    [Built system to integrate model servers into production data pipeline and optimize throughput, scaling inferences from tens to hundreds of thousands of images per day],
+    [Built ML dataset registry and Python library with common image preprocessing and annotation methods to support computer vision model reproducibility and fast dataset curation],
     [Conduct live and simulation experiments to estimate effects of new models and research proposals on company
       objectives],
     [Serve on company's ESG committee; wrote report for investor on the company's impact, responsibilities, and plans to advance sustainable aquaculture in the wider industry, establishing internal ESG objectives],
