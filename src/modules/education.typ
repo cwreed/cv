@@ -15,7 +15,9 @@
   location: [New Haven, CT],
   description: list(
     [_Thesis title_: Engaging open-source precision viticulture to manage spatial
-      heterogeneity and improve cover-cropping practice on an organic vineyard (#link("https://evst.yale.edu/node/36310")[Abstract])],
+      heterogeneity and improve cover-cropping practice on an organic vineyard (#link(
+        "https://docs.google.com/spreadsheets/d/1K__XhYuMARhjfl7jdiCD1sZ66zonhzsg9U0kCGxxh9g/edit?gid=0#gid=0",
+      )[Abstract])],
   ),
 )
 
