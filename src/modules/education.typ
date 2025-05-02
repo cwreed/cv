@@ -8,7 +8,7 @@
   description: [],
 )
 
-#let yale-resume = cvEntry(
+#let yale-cv = cvEntry(
   title: [Bachelor of Science, Environmental Studies _with distinction_, _cum laude_],
   institution: [Yale University],
   date: [2015 -- 2019],
@@ -19,6 +19,14 @@
         "https://docs.google.com/spreadsheets/d/1K__XhYuMARhjfl7jdiCD1sZ66zonhzsg9U0kCGxxh9g/edit?gid=0#gid=0",
       )[Abstract])],
   ),
+)
+
+#let yale-resume = cvEntry(
+  title: [Bachelor of Science, Environmental Studies _with distinction_, _cum laude_],
+  institution: [Yale University],
+  date: [2015 -- 2019],
+  location: [New Haven, CT],
+  description: [],
 )
 
 #let sfs-bhutan = cvEntry(

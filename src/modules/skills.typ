@@ -4,10 +4,10 @@
 
 #let ml-tools-skill = cvSkill(
   type: [ML Tools],
-  info: [PyTorch( Lightning), scikit-learn, experiment tracking (Hydra, Guild AI, W&B), TensorRT],
+  info: [PyTorch( Lightning), scikit-learn, NumPy, pandas, experiment tracking (Hydra, Guild AI, W&B), ONNX, TensorRT],
 )
 
-#let databases-skill = cvSkill(type: [Databases], info: [PostgreSQL])
+#let databases-skill = cvSkill(type: [Databases], info: [PostgreSQL, Snowflake])
 
 #let devops-skill = cvSkill(type: [DevOps], info: [Git, Docker, Terraform, dbt, Airflow, AWS])
 

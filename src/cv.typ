@@ -15,7 +15,7 @@
 #v(-12pt)
 #cvSection("Education")
 #nyu-resume
-#yale-resume
+#yale-cv
 #sfs-bhutan
 
 #cvSection("Research Experience")
