@@ -12,14 +12,14 @@
       object detection problem (targets often \<2% width of image with blur and
       varying water conditions); iterated through 3 model generations using thousands
       of tracked experiments (Guild AI, Hydra)],
-    [Reduced Lice product COGS by \~90% by automating statistical aggregation
+    [Reduced lice product COGS by \~90% by automating statistical aggregation
       pipeline (Python) that combines model predictions with minimal human QA;
       validated through field trials, with customers reporting highest accuracy among
       competitors],
     [Built 16-day lice forecasting model (LightGBM) with graph features and
       intervention simulation deployed to 350+ pens],
     [Architected microservices infrastructure (FastAPI, PostgreSQL, Docker,
-      Terraform) that serves as ML backbone for Welfare product; scaled model
+      Terraform) that serves as ML backbone for welfare product; scaled model
       inference throughput from tens of thousands to 2+ million images per day through
       continuous minibatch processing and queue management across multiple model
       servers],
