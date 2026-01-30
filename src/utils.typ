@@ -33,7 +33,7 @@
 
 #let beforeSectionSkip = 1pt
 #let beforeEntrySkip = 1pt
-#let beforeEntryDescriptionSkip = 1pt
+#let beforeEntryDescriptionSkip = -3pt
 
 #let headerFirstNameStyle(str) = {
   text(
