@@ -209,14 +209,13 @@
   let left = [#firstName #lastName]
   if pageNumbers {
     left = left + [, page #counter(page).display("1/1", both: true)]
+    table(
+      columns: (1fr, auto),
+      inset: 0pt,
+      stroke: none,
+      footerStyle(left),
+    )
   }
-  table(
-    columns: (1fr, auto),
-    inset: 0pt,
-    stroke: none,
-    footerStyle(left),
-    footerStyle([Last updated #today.display()]),
-  )
 }
 
 #let letterHeader(

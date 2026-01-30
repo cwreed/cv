@@ -17,8 +17,6 @@
   date: [January 2016 -- August 2020],
   location: [New Haven, CT],
   description: list(
-    [Assisted with field and laboratory data collection for experiments studying the
-      ecological function, formation, and rapid measurement of soil organic carbon],
     [Conducted meta-analysis (data collection, statistical analysis) of long-term experiments to quantify the mediating
       effect of soil organic carbon on the relationship between conservation
       agriculture practices and crop yield stability],

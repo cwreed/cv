@@ -1,10 +1,10 @@
 #import "../template.typ": cvSkill
 
-#let programming-skill = cvSkill(type: [Programming], info: [Python, R, SQL, Bash])
+#let programming-skill = cvSkill(type: [Programming], info: [Python, SQL, Bash])
 
 #let ml-tools-skill = cvSkill(
   type: [ML Tools],
-  info: [PyTorch( Lightning), scikit-learn, NumPy, pandas, experiment tracking (Hydra, Guild AI, W&B), ONNX, TensorRT],
+  info: [PyTorch, scikit-learn, NumPy, pandas, ONNX, TensorRT, FiftyOne, experiment tracking (Hydra, MLFlow, Weights & Biases, Guild AI)],
 )
 
 #let databases-skill = cvSkill(type: [Databases], info: [PostgreSQL, Snowflake])
@@ -13,10 +13,10 @@
 
 #let statistics-skill = cvSkill(
   type: [Statistics],
-  info: [Machine learning, deep learning, computer vision, time series, geospatial, probabilistic models, Bayesian inference, hypothesis testing, A/B testing, structural causal models, generative models],
+  info: [Machine learning, deep learning, computer vision, time series, geospatial, probabilistic models, Bayesian inference, hypothesis testing, A/B testing, generative models],
 )
 
 #let other-skill = cvSkill(
   type: [Other],
-  info: [Research, writing, public speaking, food systems, ecology, food security, climate change, music (bass)],
+  info: [Research, writing, public speaking],
 )

@@ -6,14 +6,11 @@
   date: [December 2024 -- present \ June 2022 -- December 2024],
   location: [New York, NY],
   description: list(
-    [Developed PyTorch model ensemble (combining YOLOv9, DinoV2, and a bespoke neural field with transformers) to detect
-      sea lice on salmon from underwater imagery with expert-level accuracy; optimized with TensorRT],
-    [Developed multivariate time series forecasting model with graph features using LightGBM to predict future lice levels and enable customers to simulate the impacts of future interventions],
-    [Design Python libraries to package models; deploy models as web services in AWS using FastAPI, Docker, and Terraform],
-    [Built network of microservices using FastAPI, PostgreSQL, Docker, and Terraform in AWS to integrate diverse model servers into production data pipeline and optimize throughput, scaling inferences from tens to hundreds of thousands of images per day],
-    [Developed and automated ETL processes using Python, Pydantic, and Airflow, e.g., to aggregate model inferences into customer-facing data, evaluate model accuracy over time, and move data between databases],
-    [Conduct A/B tests and statistical simulations to estimate effects of new models and research proposals on company objectives],
-    [Serve on company's ESG committee; wrote report for investor on the company's impact, responsibilities, and plans to advance sustainable aquaculture in the wider industry, establishing internal ESG objectives],
+    [Developed and deployed sea lice detection system serving 350+ fish farm pens, processing \~90,000 images daily; built PyTorch ensemble (YOLOv9, DinoV2, custom neural field transformer) achieving 0.7 F1 on challenging underwater small object detection problem (targets often \<2% width of image with blur and varying water conditions); iterated through 3 model generations using thousands of tracked experiments (Guild AI, Hydra)],
+    [Reduced Lice product COGS by \~90% by automating statistical aggregation pipeline (Python) that combines model predictions with minimal human QA; validated through field trials, with customers reporting highest accuracy among competitors],
+    [Built 16-day lice forecasting model (LightGBM) with graph features and intervention simulation deployed to 350+ pens],
+    [Architected microservices infrastructure (FastAPI, PostgreSQL, Docker, Terraform) that serves as ML backbone for Welfare product; scaled model inference throughput from tens of thousands to 2+ million images per day through continuous minibatch processing and queue management across multiple model servers],
+    [Created internal Python package/CLI for reproducible CVML dataset creation, enabling developers to export and process training data from production pipeline with configurable options documented in YAML metadata files],
   ),
 )
 
