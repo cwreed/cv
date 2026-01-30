@@ -24,16 +24,11 @@
 #let headerFont = ("Lato")
 
 #let colors = (
-  sky: rgb("#7ca1bf"),
-  sage: rgb("#688567"),
-  clay: rgb("#ad6a55"),
-  flax: rgb("#dbbc74"),
+  sky: rgb("#7ca1bf"), sage: rgb("#688567"), clay: rgb("#ad6a55"), flax: rgb("#dbbc74"),
 )
 
 #let regularColors = (
-  subtlegray: rgb("#ededee"),
-  lightgray: rgb("#343a40"),
-  darkgray: rgb("#212529"),
+  subtlegray: rgb("#ededee"), lightgray: rgb("#343a40"), darkgray: rgb("#212529"),
 )
 
 #let beforeSectionSkip = 1pt
@@ -42,11 +37,7 @@
 
 #let headerFirstNameStyle(str) = {
   text(
-    font: headerFont,
-    size: 32pt,
-    weight: "light",
-    fill: regularColors.darkgray,
-    str,
+    font: headerFont, size: 32pt, weight: "light", fill: regularColors.darkgray, str,
   )
 }
 
@@ -64,8 +55,7 @@
 
 #let entryA2Style(str, accentColor) = {
   align(
-    right,
-    text(weight: "medium", fill: accentColor, style: "oblique", str),
+    right, text(weight: "medium", fill: accentColor, style: "oblique", str),
   )
 }
 
@@ -73,8 +63,7 @@
 
 #let entryB2Style(str) = {
   align(
-    right,
-    text(size: 8pt, weight: "medium", fill: gray, style: "oblique", str),
+    right, text(size: 8pt, weight: "medium", fill: gray, style: "oblique", str),
   )
 }
 
@@ -90,11 +79,7 @@
 #let entryTagListStyle(tags) = {
   for tag in tags {
     box(
-      inset: (x: 0.25em),
-      outset: (y: 0.25em),
-      fill: regularColors.subtlegray,
-      radius: 3pt,
-      entryTagStyle(tag),
+      inset: (x: 0.25em), outset: (y: 0.25em), fill: regularColors.subtlegray, radius: 3pt, entryTagStyle(tag),
     )
     h(5pt)
   }
@@ -116,17 +101,14 @@
 
 #let honorLocationStyle(str, accentColor) = {
   align(
-    right,
-    text(weight: "medium", fill: accentColor, style: "oblique", str),
+    right, text(weight: "medium", fill: accentColor, style: "oblique", str),
   )
 }
 
 #let publicationStyle(str, firstName, lastName) = {
   // Bold any instances of my name in the bibliography
   let nameVersions = (
-    firstName + " " + lastName,
-    lastName + ", " + firstName.first() + ".",
-    firstName.first() + ". " + lastName,
+    firstName + " " + lastName, lastName + ", " + firstName.first() + ".", firstName.first() + ". " + lastName,
   )
   show regex("(" + nameVersions.join("|") + ")"): it => text(weight: "bold", it)
 
