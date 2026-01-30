@@ -16,7 +16,4 @@
   info: [Machine learning, deep learning, computer vision, time series, geospatial, probabilistic models, Bayesian inference, hypothesis testing, A/B testing, generative models],
 )
 
-#let other-skill = cvSkill(
-  type: [Other],
-  info: [Research, writing, public speaking],
-)
+#let other-skill = cvSkill(type: [Other], info: [Research, writing, public speaking])
