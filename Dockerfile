@@ -7,6 +7,4 @@ RUN cargo install typstyle --locked --version '0.14.4'
 
 WORKDIR /app
 
-COPY typstfmt.toml .
-
 ENTRYPOINT ["/bin/bash"]
