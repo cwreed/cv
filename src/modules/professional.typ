@@ -8,11 +8,10 @@
   description: list(
     [Developed and deployed sea lice detection system serving 350+ fish farm pens,
       processing \~90,000 images daily; built PyTorch ensemble (YOLOv9, DinoV2, custom
-      neural field transformer) achieving \>0.7 F1 on challenging underwater small
-      object detection problem (targets often \<2% width of image with blur and
-      varying water conditions); iterated through 3 model generations using thousands
-      of tracked experiments (Guild AI, Hydra)],
-    [Reduced lice product COGS by \~90% by automating statistical aggregation
+      neural field transformer) through 3 model generations, achieving \>0.7 F1 on challenging underwater small
+      object detection task (targets often \<2% width of image, with blur and
+      varying water conditions)],
+    [Reduced lice product COGS by \~90% through automation of statistical aggregation
       pipeline (Python) that combines model predictions with minimal human QA;
       validated through field trials, with customers reporting highest accuracy among
       competitors],
