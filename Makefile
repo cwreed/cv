@@ -24,12 +24,12 @@ build: # Build a Docker image that can be used to run typst
 
 .PHONY: fmt
 fmt: # Format all typ files in the project
-	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstfmt $(shell find . -name '*.typ')"
+	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstyle -i $(shell find . -name '*.typ')"
 
 
 .PHONY: lint
 lint: # Lint all typ files in the project
-	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstfmt --check $(shell find . -name '*.typ')"
+	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstyle --check $(shell find . -name '*.typ')"
 
 
 .PHONY: compile-cv

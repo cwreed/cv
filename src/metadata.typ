@@ -2,7 +2,9 @@
 #let lastName = "Reed"
 
 #let personalInfo = (
-  github: "cwreed", email: "connor.william.reed@gmail.com", linkedin: "connor-reed",
+  github: "cwreed",
+  email: "connor.william.reed@gmail.com",
+  linkedin: "connor-reed",
 )
 
 #let choiceColor = "clay"
