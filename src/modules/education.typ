@@ -3,15 +3,15 @@
 #let nyu-resume = cvEntry(
   title: [Master of Science, Data Science],
   institution: [New York University],
-  date: [2020 -- 2022],
+  date: [2022],
   location: [New York, NY],
-  description: [],
+  description: [*_Relevant Courses_*: Probability & Statistics for Data Science • Optimization & Computational Linear Algebra • Machine Learning • Deep Learning • Inference & Representation • Forecasting Time Series Data],
 )
 
 #let yale-cv = cvEntry(
   title: [Bachelor of Science, Environmental Studies _with distinction_, _cum laude_],
   institution: [Yale University],
-  date: [2015 -- 2019],
+  date: [2019],
   location: [New Haven, CT],
   description: list(
     [_Thesis title_: Engaging open-source precision viticulture to manage spatial
@@ -22,7 +22,7 @@
 #let yale-resume = cvEntry(
   title: [Bachelor of Science, Environmental Studies _with distinction_, _cum laude_],
   institution: [Yale University],
-  date: [2015 -- 2019],
+  date: [2019],
   location: [New Haven, CT],
   description: [],
 )

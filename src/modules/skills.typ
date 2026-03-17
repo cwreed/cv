@@ -4,8 +4,7 @@
 
 #let ml-tools-skill = cvSkill(
   type: [ML Tools],
-  info: [PyTorch, scikit-learn, NumPy, pandas, ONNX, TensorRT, FiftyOne, experiment
-    tracking (Hydra, MLFlow, Weights & Biases, Guild AI)],
+  info: [PyTorch, scikit-learn, NumPy, pandas, ONNX, TensorRT, FiftyOne, Hydra, MLFlow, Weights & Biases],
 )
 
 #let databases-skill = cvSkill(type: [Databases], info: [PostgreSQL, Snowflake])

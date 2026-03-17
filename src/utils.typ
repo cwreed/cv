@@ -59,7 +59,7 @@
 }
 
 #let headerQuoteStyle(str, accentColor) = {
-  text(size: 10pt, weight: "medium", style: "italic", fill: accentColor, str)
+  text(size: 10pt, weight: "semibold", fill: regularColors.lightgray, str)
 }
 
 #let sectionTitleStyle(str, color: black) = {
@@ -116,7 +116,7 @@
   align(left, text(size: 10pt, weight: "bold", str))
 }
 
-#let skillInfoStyle(str) = { text(str) }
+#let skillInfoStyle(str) = { text(str, size: 9pt) }
 
 #let honorDateStyle(str) = {
   align(right, text(str))

@@ -9,7 +9,7 @@
     [Developed end-to-end deep learning pipeline to detect floods and smallholder
       croplands in Sentinel-1 and Sentinel-2 satellite image time series over
       sub-Saharan Africa],
-    [Conducted geospatial time series analysis using econometric modeling techniques
+    [Conducted geospatial time series analysis using panel regression and Granger causality testing
       to assess the impact of floods on food security in sub-Saharan Africa from
       2009-2020 @reed2022],
   ),

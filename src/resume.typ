@@ -8,9 +8,12 @@
 #show: layout
 #set page(footer: cvFooter(pageNumbers: false))
 
-#cvHeader(hasPhoto: false, align: left, quote: [])
+#cvHeader(
+  hasPhoto: false,
+  align: left,
+  quote: [Machine learning engineer who moves fluidly between research and production, building systems that address complex problems from experimentation to deployment at scale. Published researcher in environmental science bringing statistical rigor and cross-domain perspective to applied machine learning and software engineering.],
+)
 
-#v(-18pt)
 #cvSection("Professional Experience")
 #aquabyte-resume
 #indigo-resume

@@ -6,25 +6,19 @@
   date: [December 2024 -- present \ June 2022 -- December 2024],
   location: [New York, NY],
   description: list(
-    [Developed and deployed sea lice detection system serving 350+ fish farm pens,
-      processing \~90,000 images daily; built PyTorch ensemble (YOLOv9, DinoV2, custom
-      neural field transformer) through 3 model generations, achieving \>0.7 F1 on challenging underwater small
-      object detection task (targets often \<2% width of image, with blur and
-      varying water conditions)],
-    [Reduced lice product COGS by \~90% through automation of statistical aggregation
-      pipeline (Python) that combines model predictions with minimal human QA;
-      validated through field trials, with customers reporting highest accuracy among
-      competitors],
-    [Built 16-day lice forecasting model (LightGBM) with graph features and
-      intervention simulation deployed to 350+ pens],
-    [Architected microservices infrastructure (FastAPI, PostgreSQL, Docker,
-      Terraform) that serves as ML backbone for welfare product; scaled model
-      inference throughput from tens of thousands to 2+ million images per day through
-      continuous minibatch processing and queue management across multiple model
-      servers],
+    [Developed and deployed sea lice detection system processing \~100K images across 400+ fish farm pens daily, automating a labor-intensive monitoring task mandated by Norwegian regulations; evolved PyTorch ensemble through 3 model generations, achieving \>0.7 F1 on challenging underwater small
+      object detection task],
+    [Designed and automated statistical aggregation
+      pipeline that combines model detections with minimal human QA to generate daily unbiased estimates of mean lice/fish, reducing lice product COGS by \~90%;
+      validated accuracy through field trials],
+    [Developed and deployed 16-day lice forecasting model with graph features and
+      intervention simulation to 400+ pens with an interactive API, enabling customers to proactively manage lice outbreaks and optimize treatment timing],
+    [Architected distributed ML inference backend for fleet of fish health models, scaling
+      throughput from \<100K to \>2M images/day],
     [Created internal Python package/CLI for reproducible CVML dataset creation,
       enabling developers to export and process training data from production pipeline
       with configurable options documented in YAML metadata files],
+    [*_Key tech_*: PyTorch, YOLOv9, DinoV2, Neural Fields, Transformers, LightGBM, MLFlow, ONNX, TensorRT, Docker, Terraform],
   ),
 )
 
@@ -34,13 +28,12 @@
   date: [June -- August 2021],
   location: [Boston, MA],
   description: list(
-    [Crafted quantitative framework, analysis, and data visualizations used by the
-      CEO to evaluate risk-reward tradeoffs of key agricultural carbon market
+    [Crafted dataset, analysis, and visualizations used by the
+      CEO to evaluate risk-reward tradeoffs of carbon market
       opportunities],
     [Developed generative Bayesian models to create synthetic soil data combining
       information from published and proprietary data],
-    [Created pipeline to automatically clean, map, and interpret soil sample data for
-      customers],
+    [*_Key tech_*: NumPy, pandas, scikit-learn, Plotly],
   ),
 )
 

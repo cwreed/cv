@@ -77,17 +77,29 @@
   }
 
   let makeHeaderNameSection() = table(
-    columns: 1fr, inset: 0pt, stroke: none, row-gutter: 6mm, [#headerFirstNameStyle(
-        firstName,
-      ) #h(5pt) #headerLastNameStyle(lastName)], [#headerInfoStyle(
-      makeHeaderInfo(),
-      accentColor,
-    )], [#headerQuoteStyle(quote, accentColor)],
+    columns: 1fr,
+    inset: 0pt,
+    stroke: none,
+    row-gutter: 6mm,
+    align: left + top,
+    [
+      #headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(
+        lastName,
+      ) #h(10pt) #headerInfoStyle(makeHeaderInfo(), accentColor)
+    ],
+    [
+      #headerQuoteStyle(quote, accentColor)
+    ],
   )
 
   let makeHeader(leftComp, rightComp, columns, align) = table(
-    columns: columns, inset: 0pt, stroke: none, column-gutter: 15pt, align: align
-      + horizon, { leftComp }, { rightComp },
+    columns: columns,
+    inset: 0pt,
+    stroke: none,
+    column-gutter: 15pt,
+    align: align + horizon,
+    { leftComp },
+    { rightComp },
   )
 
   show link: set text(fill: accentColor)
