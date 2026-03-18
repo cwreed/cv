@@ -5,7 +5,7 @@
   institution: [New York University],
   date: [2022],
   location: [New York, NY],
-  description: [*_Relevant Courses_*: Probability & Statistics for Data Science • Optimization & Computational Linear Algebra • Machine Learning • Deep Learning • Inference & Representation • Forecasting Time Series Data],
+  description: [*_Relevant Coursework_*: Probability & Statistics for Data Science • Optimization & Computational Linear Algebra • Machine Learning • Deep Learning • Inference & Representation • Forecasting Time Series Data],
 )
 
 #let yale-cv = cvEntry(
