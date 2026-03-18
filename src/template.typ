@@ -76,21 +76,39 @@
     }
   }
 
-  let makeHeaderNameSection() = table(
-    columns: 1fr,
-    inset: 0pt,
-    stroke: none,
-    row-gutter: 6mm,
-    align: left + top,
-    [
-      #headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(
-        lastName,
-      ) #h(10pt) #headerInfoStyle(makeHeaderInfo(), accentColor)
-    ],
-    [
-      #headerQuoteStyle(quote, accentColor)
-    ],
-  )
+  let makeHeaderNameSection(quote) = if quote != "" {
+    table(
+      columns: 1fr,
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6mm,
+      align: left + top,
+      [
+        #headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(
+          lastName,
+        ) #h(10pt) #headerInfoStyle(makeHeaderInfo(), accentColor)
+      ],
+      [
+        #headerQuoteStyle(quote, accentColor)
+      ],
+    )
+  } else {
+    table(
+      columns: 1fr,
+      inset: 0pt,
+      stroke: none,
+      row-gutter: 6mm,
+      align: left + top,
+      [
+        #headerFirstNameStyle(firstName) #h(5pt) #headerLastNameStyle(
+          lastName,
+        )
+      ],
+      [
+        #headerInfoStyle(makeHeaderInfo(), accentColor)
+      ]
+    )
+  }
 
   let makeHeader(leftComp, rightComp, columns, align) = table(
     columns: columns,
@@ -103,7 +121,7 @@
   )
 
   show link: set text(fill: accentColor)
-  makeHeader(makeHeaderNameSection(), v(2.75cm), (auto, 0%), align)
+  makeHeader(makeHeaderNameSection(quote), v(2.75cm), (auto, 0%), align)
 }
 
 #let cvSection(title, highlighted: true, letters: 3) = {
