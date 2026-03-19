@@ -13,7 +13,7 @@
       validated accuracy through field trials],
     [Developed and deployed 16-day lice forecasting model with graph features and
       intervention simulation to 400+ pens with an interactive API, enabling customers to proactively manage lice outbreaks and optimize treatment timing],
-    [Architected distributed ML inference backend for fleet of fish health models, scaling
+    [Architected distributed ML inference backend for fleet of vision models, scaling
       throughput from \<100K to \>2M images/day],
     [Created internal Python package/CLI for reproducible CVML dataset creation,
       enabling developers to export and process training data from production pipeline
