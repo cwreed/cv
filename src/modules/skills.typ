@@ -16,9 +16,14 @@
 
 #let statistics-skill = cvSkill(
   type: [Statistics],
-  info: [Machine learning, deep learning, computer vision, time series, geospatial,
+  info: [Machine learning, deep learning, computer vision, time series,
     probabilistic models, Bayesian inference, hypothesis testing, A/B testing,
     generative models],
+)
+
+#let geospatial-skill = cvSkill(
+  type: [Geospatial],
+  info: [Google Earth Engine, GeoPandas, rasterio, xarray, GDAL],
 )
 
 #let other-skill = cvSkill(
