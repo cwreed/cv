@@ -1,6 +1,4 @@
 IMAGE_NAME := typst-dev
-CV_OUT_FILE := connor-reed-cv.pdf
-RESUME_OUT_FILE := connor-reed-resume.pdf
 
 
 default: help
@@ -32,21 +30,18 @@ lint: # Lint all typ files in the project
 	@ docker run --rm -v $(PWD):/app $(IMAGE_NAME) -c "typstyle --check $(shell find . -name '*.typ')"
 
 
-.PHONY: compile-cv
-compile-cv: # Compile the cv.typ file to a PDF
-	@ docker run \
-		--rm \
-		-v $(PWD):/app \
-		-v /etc/timezone:/etc/timezone:ro \
-		-v /etc/localtime:/etc/localtime:ro \
-		$(IMAGE_NAME) -c "typst compile src/cv.typ outputs/$(CV_OUT_FILE) --font-path fonts/"
-
-
-.PHONY: compile-resume
-compile-resume: # Compile the resume.typ file to a PDF
-	@ docker run \
-		--rm \
-		-v $(PWD):/app \
-		-v /etc/timezone:/etc/timezone:ro \
-		-v /etc/localtime:/etc/localtime:ro \
-		$(IMAGE_NAME) -c "typst compile src/resume.typ outputs/$(RESUME_OUT_FILE) --font-path fonts/"
+.PHONY: compile-all
+compile-all: # Compile all resume.typ and cv.typ files under src/, mirroring directory structure in outputs/
+	@ find src \( -name 'resume.typ' -o -name 'cv.typ' \) | while read src_file; do \
+		rel_dir=$$(dirname "$$src_file" | sed 's|^src||'); \
+		filename=$$(basename "$$src_file" .typ); \
+		out_dir="outputs$$rel_dir"; \
+		out_file="$$out_dir/connor-reed-$$filename.pdf"; \
+		mkdir -p "$$out_dir"; \
+		docker run \
+			--rm \
+			-v $(PWD):/app \
+			-v /etc/timezone:/etc/timezone:ro \
+			-v /etc/localtime:/etc/localtime:ro \
+			$(IMAGE_NAME) -c "typst compile $$src_file $$out_file --root /app --font-path fonts/"; \
+	done
