@@ -18,9 +18,6 @@
       proactively manage lice outbreaks and optimize treatment timing],
     [Architected distributed ML inference backend for fleet of vision models, scaling
       throughput from \<100K to \>2M images/day],
-    [Created internal Python package/CLI for reproducible CVML dataset creation,
-      enabling developers to export and process training data from production pipeline
-      with configurable options documented in YAML metadata files],
     [*_Key tech_*: PyTorch, YOLOv9, DinoV2, Neural Fields, Transformers, LightGBM, MLFlow, ONNX, TensorRT, Docker, Terraform],
   ),
 )
@@ -31,9 +28,9 @@
   date: [June -- August 2021],
   location: [Boston, MA],
   description: list(
-    [Developed generative Bayesian models to synthesize soil carbon datasets from
-      heterogeneous published and proprietary sources, enabling downstream modeling of
-      soil carbon levels under different management practices and geographies],
+    [Developed generative Bayesian models to synthesize soil datasets from
+      heterogeneous published and proprietary sources, enabling simulation of
+      soil carbon responses to management practices across diverse geographies],
     [Performed quantitative analysis of carbon sequestration potential and risk-reward
       tradeoffs across agricultural land use scenarios to identify high-value carbon
       market opportunities],
