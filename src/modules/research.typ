@@ -6,12 +6,12 @@
   date: [July 2020 -- September 2022],
   location: [New York, NY],
   description: list(
-    [Developed end-to-end deep learning pipeline to detect floods and smallholder
-      croplands in Sentinel-1 and Sentinel-2 satellite image time series over
-      sub-Saharan Africa],
-    [Conducted geospatial time series analysis using panel regression and Granger causality testing
-      to assess the impact of floods on food security in sub-Saharan Africa from
-      2009-2020 @reed2022],
+    [Developed end-to-end geospatial deep learning pipeline to infer flood extent and
+      smallholder cropland distribution from multi-modal Sentinel-1 SAR and Sentinel-2
+      multispectral time series across sub-Saharan Africa],
+    [Published geospatial causal analysis quantifying the impact of flood events on food
+      security outcomes (IPC rating) across sub-Saharan Africa 2009--2020
+      using panel regression and Granger causality testing @reed2022],
   ),
 )
 
