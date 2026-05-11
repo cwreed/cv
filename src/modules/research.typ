@@ -7,10 +7,10 @@
   location: [New York, NY],
   description: list(
     [Developed end-to-end geospatial deep learning pipeline to infer flood extent and
-      smallholder cropland distribution from multi-modal Sentinel-1 SAR and Sentinel-2
+      smallholder cropland distribution from Sentinel-1 SAR and Sentinel-2
       multispectral time series across sub-Saharan Africa],
-    [Published geospatial causal analysis quantifying the impact of flood events on food
-      security outcomes (IPC rating) across sub-Saharan Africa 2009--2020
+    [Published geospatial causal analysis localizing and quantifying the impact of flood events on food
+      security outcomes (IPC rating) across sub-Saharan Africa from 2009--2020
       using panel regression and Granger causality testing @reed2022],
   ),
 )

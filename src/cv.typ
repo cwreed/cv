@@ -26,8 +26,8 @@
 #ref
 
 #cvSection("Professional Experience")
-#aquabyte-resume
-#indigo-resume
+#aquabyte-cv
+#indigo-cv
 
 #pagebreak()
 #cvSection("Grants & Honors")
@@ -37,6 +37,7 @@
 #cvSection("Skills")
 #programming-skill
 #ml-tools-skill
+#geospatial-skill
 #databases-skill
 #devops-skill
 #statistics-skill
